@@ -1,12 +1,7 @@
-/* src/app/globals.css */
+@import 'tailwindcss';
 
-/* A nova forma de importar TUDO do Tailwind v4 */
-@import "tailwindcss";
-
-/* O CSS do Mantine continua vindo depois */
 @import '@mantine/core/styles.css';
 
-/* Suas customizações globais (se houver) */
 body {
   background: var(--background);
   color: var(--foreground);

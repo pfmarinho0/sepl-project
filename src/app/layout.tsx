@@ -1,11 +1,16 @@
-// src/app/layout.tsx
+import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from '@mantine/core';
 import { Figtree } from 'next/font/google';
-import { MantineProviders } from '../MantineProviders'; // Importe seu provedor personalizado
-import '@mantine/core/styles.css';
+import Header from '@/components/Header';
+import { theme } from './theme';
+
 import './globals.css';
-import { HeroSection } from '@/components/HeroSection';
 
 const figtree = Figtree({ subsets: ['latin'] });
+
+export const metadata = {
+  title: 'Landing Page GIP',
+  description: 'Landing Page para Gestão do Investimento Público do Piauí.',
+};
 
 export default function RootLayout({
   children,
@@ -13,12 +18,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" className={figtree.className}>
+    <html lang="pt-br" {...mantineHtmlProps} className={figtree.className}>
+      <head>
+        <ColorSchemeScript defaultColorScheme="auto" />
+      </head>
       <body>
-        <MantineProviders>
-          <HeroSection />
+        <MantineProvider theme={theme}>
+          <Header />
           {children}
-        </MantineProviders>
+        </MantineProvider>
       </body>
     </html>
   );

@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Landing Page GIP
+Este projeto é a implementação da landing page do GIP – Gestão do Investimento Público do Piauí, desenvolvida como um teste de vaga para Front-end.
 
-## Getting Started
+Tecnologias
+Next.js: Framework para React, utilizado para renderização do lado do servidor (SSR) e roteamento, garantindo uma aplicação rápida e otimizada.
 
-First, run the development server:
+Mantine UI: Biblioteca de componentes React que acelera o desenvolvimento com um sistema de design robusto e personalizável.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Tailwind CSS v4: Framework CSS que permite construir designs complexos e responsivos de forma rápida, usando classes utilitárias.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+TypeScript: Linguagem de programação que adiciona tipagem estática, tornando o código mais seguro e escalável.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Estrutura do Projeto
+O projeto segue uma arquitetura modular baseada em componentes, garantindo código limpo e reutilizável.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+/src/app: Contém a lógica de roteamento do Next.js. O layout.tsx centraliza os provedores de tema e o cabeçalho, enquanto o page.tsx gerencia a composição das seções da página.
 
-## Learn More
+/src/components: Contém todos os componentes reutilizáveis, como o cabeçalho (Header), a barra de cores (ColorBar), e as seções da página (Hero, About, Timeline, Governance).
 
-To learn more about Next.js, take a look at the following resources:
+/src/components/TimelineItem: Componente específico para cada etapa da linha do tempo, evitando repetição de código.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+/src/theme.ts: Arquivo que centraliza a definição do tema do Mantine, incluindo cores, tipografia e espaçamentos, conforme o guia de estilo.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Responsividade
+Em processo de adaptação dos breakpoints definidos no guia de estilo.
 
-## Deploy on Vercel
+Mobile (xs, sm): Layout em uma única coluna com espaçamentos otimizados para telas menores.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Desktop (md, lg, xl): Layout de duas colunas em seções como "O que é o GIP?" e "Governância", com ajustes de tamanho de fonte e espaçamento para uma melhor experiência em telas maiores.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Considerações Finais
+O projeto foi um desafio interessante, principalmente por combinar Next.js, Mantine e a nova versão do Tailwind. O processo de modularização e a atenção aos detalhes do guia de estilo foram cruciais para a implementação. Apesar do tempo limitado, atrelado ao fato de estar incompleto, estou confiante de que o resultado até aqui demonstra minha capacidade de aprender e aplicar novas tecnologias de forma eficiente.
