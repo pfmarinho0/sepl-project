@@ -1,6 +1,34 @@
 Landing Page GIP
 Este projeto é a implementação da landing page do GIP – Gestão do Investimento Público do Piauí, desenvolvida como um teste de vaga para Front-end.
 
+Pré-requisitos
+Certifique-se de ter o Node.js (versão 18.x ou superior) e o npm (ou Yarn) instalados em sua máquina.
+
+Instalação
+1 - Clone o repositório para sua máquina local:
+  git clone [URL_DO_SEU_REPOSITORIO]
+
+2- Navegue até o diretório do projeto:
+  cd nome-do-seu-projeto
+
+3 - Instale as dependências:
+ npm install
+
+  ou
+
+  yarn
+
+Rodando o Projeto
+Para iniciar o servidor de desenvolvimento, execute o seguinte comando:
+
+npm run dev
+
+ou
+
+yarn dev
+
+A aplicação estará disponível em http://localhost:3000.
+
 Tecnologias
 Next.js: Framework para React, utilizado para renderização do lado do servidor (SSR) e roteamento, garantindo uma aplicação rápida e otimizada.
 
