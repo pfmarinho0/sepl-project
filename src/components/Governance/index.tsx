@@ -3,24 +3,13 @@ import { Box, Title, Text } from '@mantine/core';
 export function Governance() {
   return (
     <Box
-      mah="100vh"
-      mih="508"
-      py="128"
-      id="governance"      
-      className="flex justify-center items-center bg-gradient-to-t from-[#063246] to-[#15719A]"
-      style={{
-        height: '100vh', // Exemplo: altura total da tela
-        width: '100%',
-      }}
+      id="governance" 
+      className="w-100% xs:min-w-[320px] xs:max-w-[631px] sm:min-w-[632px] sm:max-w-[767px] md:min-w-[768px] md:max-w-[1024px] lg:min-w-[1024px] lg:max-w-[1279px] xl:min-w-[1280px] flex justify-center items-center justify-self-center-safe bg-gradient-to-t from-[#063246] to-[#15719A]"
     >
       <Box
-        mih="80%"
-        mah="80%"
-        miw="80%"
-        maw="80%"
-        className='flex justify-center items-center gap-11'
+        className='xs:max-w-[631] xs:min-w-[320px] sm:max-w-[767px] sm:min-w-[632px] md:max-w-[1023px] md:min-w-[768px] lg:max-w-[1279px] lg:min-w-[1024px] xl:min-w-[1280px] xs:py-[32px] sm:py-[32px] md:py-[48px] lg:py-[80px] xl:py-[80px] flex justify-center items-center justify-self-center-safe gap-11'
       >
-        <Box mih="100%" className='flex-1 self-start flex flex-col justify-between'>
+        <Box className='flex-1 self-start flex flex-col justify-between'>
           {/* ... Seu conteúdo da coluna esquerda aqui ... */}
           <Box className='flex-1'>
             <Box mb="xs" className='bg-[#EAB30826] inline-block py-1 px-3 self-start rounded-md'>

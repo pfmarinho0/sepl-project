@@ -3,12 +3,10 @@
 import { Box, Group, Text, UnstyledButton } from '@mantine/core';
 import Image from "next/image";
 import { IconLock } from '@tabler/icons-react';
-import { useDisclosure } from '@mantine/hooks';
 
 export default function Header() {
-    const [opened, { toggle, close }] = useDisclosure(false);
     return (
-        <Box className="w-screen h-[160px] text-[16px]">
+        <Box className="w-100% h-[160px] text-[16px]">
             {/* Primeiro Cabeçalho */}
             <Box px={{ base: 'sm', md: 'md', lg: 'xl' }} w="100%" h="50%" className=" flex justify-between items-center bg-[#15719A]">
                 <Group className="flex-col md:flex-row">

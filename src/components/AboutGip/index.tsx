@@ -2,8 +2,8 @@ import { Box, Title, Text, Image } from '@mantine/core';
 
 export function About() {
   return (
-    <Box maw="100%" id="site-seplan" className="flex justify-center items-center bg-[#FFFF] px-5 sm:px-5 md:px-8 lg:px-16 py-8 md:py-12 lg:py-20">
-      <Box w="80%" className="flex flex-col md:flex-row justify-between items-center gap-12">
+    <Box className='bg-[#FFFF] xs:max-w-[631] xs:min-w-[320px] sm:max-w-[767px] sm:min-w-[632px] md:max-w-[1023px] md:min-w-[768px] lg:max-w-[1279px] lg:min-w-[1024px] xl:min-w-[1280px] xs:pt-[64px] sm:pt-[64px] md:pt-[96px] lg:pt-[128px] xl:pt-[128px] flex items-center justify-center justify-self-center-safe px-5 lg:py-50px sm:px-5 md:px-8 lg:px-16'>
+      <Box className="xs:min-w-[280px] sm:min-w-[592px] md:min-w-[704px] lg:min-w-[896px] xl:w-[1120px] flex flex-col md:flex-row justify-between items-center gap-12">
         <Box h={{ base: 'full', md: 536 }} className="w-full md:w-1/2 flex justify-center items-center">
           <Image
             src={'/gip.jpg'}
