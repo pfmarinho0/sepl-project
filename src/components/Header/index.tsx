@@ -1,24 +1,22 @@
-"use client";
-
 import { Box, Group, Text, UnstyledButton } from '@mantine/core';
 import Image from "next/image";
 import { IconLock } from '@tabler/icons-react';
 
 export default function Header() {
     return (
-        <Box className="w-100% h-[160px] text-[16px]">
+        <Box className="w-100% h-[160px]">
             {/* Primeiro Cabeçalho */}
-            <Box px={{ base: 'sm', md: 'md', lg: 'xl' }} w="100%" h="50%" className=" flex justify-between items-center bg-[#15719A]">
+            <Box px={{ base: 'sm', md: 'md', lg: 'xl' }} w="100%" h="50%" className="flex justify-between items-center bg-[#15719A]">
                 <Group className="flex-col md:flex-row">
                     {/* Links de âncora */}
-                    <Text c="minha-cor-primaria.0" className="cursor-pointer">Site da Seplan</Text>
-                    <Text c="minha-cor-primaria.0" className="cursor-pointer">Diálogos</Text>
-                    <Text c="minha-cor-primaria.0" className="cursor-pointer">OPA</Text>
-                    <Text c="minha-cor-primaria.0" className="cursor-pointer">dadosPI</Text>
-                    <Text c="minha-cor-primaria.0" className="cursor-pointer">Pactos pelo Piauí</Text>
-                    <Text c="minha-cor-primaria.0" className="cursor-pointer">Retribuir</Text>
-                    <Text c="minha-cor-primaria.0" className="cursor-pointer">PSI</Text>
-                    <Text c="minha-cor-primaria.0" className="cursor-pointer">Pilares</Text>
+                    <Text fz={{ base: '14px', xs: '16px', sm: '18px', md: '20px' }} c="minha-cor-primaria.0" className="cursor-pointer">Site da Seplan</Text>
+                    <Text fz={{ base: '14px', xs: '16px', sm: '18px', md: '20px' }} c="minha-cor-primaria.0" className="cursor-pointer">Diálogos</Text>
+                    <Text fz={{ base: '14px', xs: '16px', sm: '18px', md: '20px' }} c="minha-cor-primaria.0" className="cursor-pointer">OPA</Text>
+                    <Text fz={{ base: '14px', xs: '16px', sm: '18px', md: '20px' }} c="minha-cor-primaria.0" className="cursor-pointer">dadosPI</Text>
+                    <Text fz={{ base: '14px', xs: '16px', sm: '18px', md: '20px' }} c="minha-cor-primaria.0" className="cursor-pointer">Pactos pelo Piauí</Text>
+                    <Text fz={{ base: '14px', xs: '16px', sm: '18px', md: '20px' }} c="minha-cor-primaria.0" className="cursor-pointer">Retribuir</Text>
+                    <Text fz={{ base: '14px', xs: '16px', sm: '18px', md: '20px' }} c="minha-cor-primaria.0" className="cursor-pointer">PSI</Text>
+                    <Text fz={{ base: '14px', xs: '16px', sm: '18px', md: '20px' }} c="minha-cor-primaria.0" className="cursor-pointer">Pilares</Text>
                 </Group>
                 <Image 
                     src={'/SEPLAN.svg'}

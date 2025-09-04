@@ -2,7 +2,7 @@ import { Box, Title, Text, Button, Group } from '@mantine/core';
 
 export function Hero() {
   return (
-    <Box className='bg-[#FFFF] w-screen xs:max-w-[631] xs:min-w-[320px] sm:max-w-[767px] sm:min-w-[632px] md:max-w-[1023px] md:min-w-[768px] lg:max-w-[1279px] lg:min-w-[1024px] xl:min-w-[1280px] xs:py-[48px] sm:py-[48px] md:py-[48px] lg:py-[80px] xl:py-[80px] flex items-center justify-center justify-self-center-safe '>
+    <Box className='bg-[#FFFF] w-full min-h-screen flex items-center justify-center justify-self-center-safe '>
       <Box className='xs:min-w-[280px] sm:min-w-[592px] md:min-w-[704px] lg:min-w-[896px] xl:w-[1120px] flex flex-col items-center gap-8'>
         <Box className='flex flex-col'>
           <Title

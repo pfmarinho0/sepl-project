@@ -6,19 +6,20 @@ export function Timeline() {
   return (
     // Container Geral (Wrapper da Seção)
     <Box
-      className="w-100% xs:min-w-[320px] xs:max-w-[631px] sm:min-w-[632px] sm:max-w-[767px] md:min-w-[768px] md:max-w-[1024px] lg:min-w-[1024px] lg:max-w-[1279px] xl:min-w-[1280px] xs:py-[32px] sm:py-[32px] md:py-[48px] lg:py-[80px] xl:py-[80px] flex items-center justify-center justify-self-center-safe px-5 sm:px-5 md:px-8"
+      className="w-full min-h-screen flex items-center justify-center justify-self-center-safe px-5 sm:px-5 md:px-8"
     >
-      {/* Container Principal do Conteúdo */}
       <Box
-        // Mobile: Layout em coluna, largura total.
-        // Desktop: Layout em linha, largura máxima para não esticar demais.
-        className="xs:min-w-[280px] xs:max-w-[591px] sm:min-w-[592px] sm:max-w-[727px] md:min-w-[704px] md:max-w-[959px] lg:min-w-[896px] lg:max-w-[1120px] xl:w-[1120px] flex flex-col lg:flex-row gap-8 lg:gap-12"
+        className="w-full
+          sm:max-w-screen-sm 
+          md:max-w-screen-md
+          lg:max-w-screen-lg
+          xl:max-w-screen-xl flex flex-col lg:flex-row gap-8 lg:gap-12"
       >
         {/* Coluna Esquerda (Conteúdo Introdutório) */}
         <Box
           // Em desktop, esta coluna ficará "presa" no topo.
           // O gap garante um espaçamento consistente entre os elementos.
-          className="flex-1 border-none flex flex-col justify-start gap-8 lg:sticky lg:max-h-[85vh] lg:top-8"
+          className="flex-1 border-none flex flex-col justify-start gap-8 lg:max-h-[85vh] lg:top-8"
           style={{ alignSelf: 'flex-start' }} // Garante que a coluna não estique verticalmente
         >
           <Box className="bg-[#EAB30826] inline-block py-1 px-3 self-start rounded-md">
@@ -57,12 +58,12 @@ export function Timeline() {
         {/* Coluna Direita (Lista de Etapas) */}
         <Box
           // Em desktop, limitamos a altura e adicionamos scroll se necessário.
-          className="flex-1 border-none flex flex-col gap-4 lg:max-h-[85vh]"
+          className="flex-1 border-none flex flex-col gap-5 lg:max-h-[85vh]"
         >
           {/* Card 1 */}
           <Box
             bg="minha-cor-primaria.0"
-            className="rounded-lg shadow-sm p-4"
+            className="rounded-lg shadow-smp p-4"
           >
             <Title order={3} c="minha-cor-primaria.6">
               Ideação e Concepção
@@ -76,7 +77,7 @@ export function Timeline() {
           {/* Card 2 */}
           <Box
             bg="minha-cor-primaria.0"
-            className="rounded-lg shadow-sm p-4"
+            className="rounded-lg shadow-smp p-4"
           >
             <Title order={3} c="minha-cor-primaria.6">
               Avaliação Prévia
@@ -90,7 +91,7 @@ export function Timeline() {
           {/* Card 3 */}
           <Box
             bg="minha-cor-primaria.0"
-            className="rounded-lg shadow-sm p-4"
+            className="rounded-lg shadow-smp p-4"
           >
             <Title order={3} c="minha-cor-primaria.6">
               Priorização e Seleção
@@ -102,10 +103,10 @@ export function Timeline() {
             </Text>
           </Box>
 
-          {/* Card 4 */}
+          {/* Cardx-4 py-2 */}
           <Box
             bg="minha-cor-primaria.0"
-            className="rounded-lg shadow-sm p-4"
+            className="rounded-lg shadow-smp p-4"
           >
             <Title order={3} c="minha-cor-primaria.6">
               Execução do Investimento
@@ -119,7 +120,7 @@ export function Timeline() {
           {/* Card 5 */}
           <Box
             bg="minha-cor-primaria.0"
-            className="rounded-lg shadow-sm p-4"
+            className="rounded-lg shadow-smp p-4"
           >
             <Title order={3} c="minha-cor-primaria.6">
               Avaliação Ex Post
